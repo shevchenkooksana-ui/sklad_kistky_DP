@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Практикум: сполуки у кістках</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#FFF8E1;color:#111;font:24px/1.5 "Segoe UI",Arial,sans-serif;padding:16px}
+.wrap{max-width:900px;margin:0 auto}
+h1{background:#1A237E;color:#FFEB3B;font-size:2em;line-height:1.2;text-align:center;padding:24px 16px;border-radius:20px;margin:0 0 12px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#fff;border:4px solid #1A237E;border-radius:16px;padding:10px 14px;margin-bottom:18px;font-weight:700;color:#1A237E}
+.track{height:20px;background:#C5CAE9;border-radius:10px;overflow:hidden;margin-top:6px}
+.fill{height:100%;width:0;background:#00C853;transition:width .3s}
+.card{border-radius:20px;padding:22px;margin-bottom:22px;border:5px solid #000}
+.card h2{margin:0 0 12px;font-size:1.5em}
+.t{background:#BBDEFB}.t h2{color:#0D47A1}
+.m{background:#C8E6C9}.m h2{color:#1B5E20}
+.z{background:#FFE0B2}.z h2{color:#BF360C}
+.q{background:#E1BEE7}.q h2{color:#4A148C}
+.safe{background:#B71C1C;color:#fff;border-radius:14px;padding:14px;margin:12px 0;font-weight:700}
+.exp{background:#fff;border:4px solid #E65100;border-radius:16px;padding:16px;margin:14px 0}
+.exp h3{margin:0 0 8px;color:#E65100;font-size:1.2em}
+label.s{display:flex;gap:12px;align-items:flex-start;padding:8px 4px;cursor:pointer}
+input[type=checkbox]{width:32px;height:32px;flex:none;accent-color:#00C853;margin-top:4px}
+textarea{width:100%;min-height:90px;font:inherit;font-size:22px;border:4px solid #4A148C;border-radius:12px;padding:10px;background:#fff;color:#111}
+button{font:inherit;font-weight:700;font-size:22px;background:#4A148C;color:#fff;border:0;border-radius:12px;padding:12px 20px;margin:8px 0;cursor:pointer;min-height:52px}
+button:focus-visible,textarea:focus-visible,input:focus-visible{outline:5px solid #FFEA00;outline-offset:2px}
+.ans{display:none;background:#FFEB3B;border:4px solid #4A148C;border-radius:12px;padding:12px;margin-top:6px;font-weight:600}
+.ans.on{display:block}
+.qq{background:#fff;border-radius:16px;padding:14px;margin:14px 0}
+.qq b{color:#4A148C}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:.9em}
+td,th{border:3px solid #BF360C;padding:8px}
+th{background:#BF360C;color:#fff}
+td[contenteditable]{min-height:48px}
+@media print{.bar{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🦴 Дослідницький практикум<br>Кістки: що в них міститься?</h1>
+<div class="bar">Виконано кроків: <span id="cnt">0</span> з <span id="tot">0</span><div class="track"><div class="fill" id="fill"></div></div></div>
+
+<section class="card t">
+<h2>📌 Тема</h2>
+<p><b>Визначення наявності неорганічних та органічних сполук у кістках.</b></p>
+</section>
+
+<section class="card m">
+<h2>🎯 Мета</h2>
+<p>Дослідним шляхом довести, що кістка складається з <b>органічних</b> (білок оссеїн, колаген) та <b>неорганічних</b> (мінеральні солі кальцію) речовин, і з’ясувати, яку роль кожна з них відіграє.</p>
+</section>
+
+<section class="card z">
+<h2>🧪 Завдання</h2>
+<p>Познач кожен виконаний крок галочкою ✅</p>
+<p><b>Обладнання:</b> дві однакові курячі кістки (очищені, знежирені), 5–10 % розчин оцтової або соляної кислоти, склянка, щипці, спиртівка, фарфорова чашка, захисні окуляри й рукавички.</p>
+<div class="safe">⚠️ Безпека: працюй в окулярах і рукавичках. Кислоту доливай обережно. Нагрівай кістку лише щипцями, під наглядом вчителя. Не нюхай з близької відстані.</div>
+
+<div class="exp">
+<h3>Дослід 1. Дія кислоти — виявляємо неорганічні сполуки</h3>
+<label class="s"><input type="checkbox"><span>Одягни окуляри та рукавички. Виміряй і зазнач довжину та гнучкість кістки.</span></label>
+<label class="s"><input type="checkbox"><span>Занури кістку в склянку з розчином кислоти повністю.</span></label>
+<label class="s"><input type="checkbox"><span>Спостерігай протягом 5–10 хв: чи з’являються пухирці газу?</span></label>
+<label class="s"><input type="checkbox"><span>Залиш на 2–3 доби (накрий склянку). Промий кістку водою.</span></label>
+<label class="s"><input type="checkbox"><span>Перевір гнучкість: спробуй обережно зігнути кістку.</span></label>
+</div>
+
+<div class="exp">
+<h3>Дослід 2. Прожарювання — виявляємо органічні сполуки</h3>
+<label class="s"><input type="checkbox"><span>Візьми другу кістку щипцями й внеси в полум’я спиртівки.</span></label>
+<label class="s"><input type="checkbox"><span>Спостерігай: чи темніє кістка, чи є запах паленого, чи горить полум’я?</span></label>
+<label class="s"><input type="checkbox"><span>Прожарюй 10–15 хв, поки кістка не стане світло-сірою.</span></label>
+<label class="s"><input type="checkbox"><span>Дай охолонути у фарфоровій чашці. Спробуй легенько натиснути — що відбувається?</span></label>
+<label class="s"><input type="checkbox"><span>Краплю кислоти нанеси на золу: чи є шипіння?</span></label>
+</div>
+
+<h3>📝 Таблиця спостережень (клікни в клітинку й пиши)</h3>
+<table>
+<tr><th>Дослід</th><th>Що спостерігали</th><th>Що довели</th></tr>
+<tr><td>1. Кислота</td><td contenteditable></td><td contenteditable></td></tr>
+<tr><td>2. Прожарювання</td><td contenteditable></td><td contenteditable></td></tr>
+</table>
+</section>
+
+<section class="card q">
+<h2>❓ Питання для висновків</h2>
+<p>Напиши свою думку, потім натисни «Перевірити».</p>
+
+<div class="qq"><b>1.</b> Чому кістка після кислоти стала гнучкою? Які речовини розчинилися?
+<textarea></textarea><button>Перевірити</button>
+<div class="ans">Кислота розчинила мінеральні солі (фосфат і карбонат кальцію). Пухирці — це вуглекислий газ, що виділяється з карбонатів. Залишився органічний білок (оссеїн, колаген), тому кістка гнучка.</div></div>
+
+<div class="qq"><b>2.</b> Чому прожарена кістка стала крихкою та світлою? Що вигоріло?
+<textarea></textarea><button>Перевірити</button>
+<div class="ans">Вигоріли органічні речовини (білки, жири): були потемніння й запах паленого. Лишилися неорганічні солі — зола тверда, але без гнучкості, тому вона розсипається.</div></div>
+
+<div class="qq"><b>3.</b> Яку роль у кістці відіграють органічні, а яку — неорганічні речовини?
+<textarea></textarea><button>Перевірити</button>
+<div class="ans">Органічні речовини дають гнучкість і пружність. Неорганічні дають твердість і міцність. Лише разом вони роблять кістку одночасно міцною й пружною.</div></div>
+
+<div class="qq"><b>4.</b> Як змінюється співвідношення цих речовин з віком? До чого це призводить?
+<textarea></textarea><button>Перевірити</button>
+<div class="ans">У дітей більше органічних речовин, тому кістки гнучкі й рідше ламаються. У літніх людей їх менше, а мінеральна частина лишається, тому кістки крихкіші й частіше ламаються.</div></div>
+
+<div class="qq"><b>5.</b> Сформулюй загальний висновок практикуму.
+<textarea></textarea><button>Перевірити</button>
+<div class="ans">Кістка — складний матеріал із органічних (білки) і неорганічних (солі кальцію) речовин. Кислота виявляє неорганічні, а прожарювання — органічні сполуки. Їх поєднання забезпечує міцність і гнучкість скелета.</div></div>
+</section>
+</div>
+<script>
+var cb=document.querySelectorAll('input[type=checkbox]');
+document.getElementById('tot').textContent=cb.length;
+function upd(){var n=0;cb.forEach(function(c){if(c.checked)n++});
+document.getElementById('cnt').textContent=n;
+document.getElementById('fill').style.width=(n/cb.length*100)+'%'}
+cb.forEach(function(c){c.addEventListener('change',upd)});
+document.querySelectorAll('.qq button').forEach(function(b){
+b.addEventListener('click',function(){var a=b.parentNode.querySelector('.ans');
+a.classList.toggle('on');b.textContent=a.classList.contains('on')?'Сховати відповідь':'Перевірити'})});
+</script>
+</body>
+</html>
